@@ -1,8 +1,24 @@
 aid: cardiologs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cardiologs.png
 name: Cardiologs
-description: 'Cardiologs is a company surfaced as a portfolio company of partech and added to the API
-  Evangelist network as a stub for enrichment. Sector: Healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Cardiologs is a cloud-based ECG analysis platform that uses clinically validated
+  artificial intelligence to streamline cardiac diagnostics, helping clinicians and healthcare
+  providers reduce the burden of manual ECG interpretation while improving diagnostic scalability
+  and accessibility. Founded in Paris in 2014, Cardiologs was acquired by Philips in 2021 and is
+  now offered as part of Philips ambulatory monitoring and diagnostics (ECG monitoring) portfolio.
+  The company publishes no public developer API, SDK, or developer portal; its primary domain
+  redirects to the Philips healthcare product page.'
 url: https://raw.githubusercontent.com/api-evangelist/cardiologs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +26,19 @@ x-backed-by:
 - partech
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired-by-philips
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- ECG
+- Cardiac Diagnostics
+- Artificial Intelligence
+- Medical Devices
+- Cardiology
+- Philips
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cardiologs-domain-security.yml
 - type: Website
   url: https://cardiologs.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
